@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StylesView: View {
     let title: String
-    private let rows = Array(0...10)
+    private let rows = Array(0...0)
 
     var body: some View {
         VStack {
