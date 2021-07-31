@@ -12,4 +12,4 @@ SwiftUI List sample.
 
 | List Style | Inset | Color Section |
 | --- | --- | --- |
-|![styles](https://user-images.githubusercontent.com/34936885/127751628-9394e670-7ed8-4c43-b943-46167060411e.png)|![inset](https://user-images.githubusercontent.com/34936885/127751631-1601402c-3328-44ef-a9b8-3212c222a68d.png)|![color_section](https://user-images.githubusercontent.com/34936885/127751633-9c9321ae-e3c0-4922-aab0-19821c9ba67d.png)|
+|![styles](https://user-images.githubusercontent.com/34936885/127752233-b9ce2a42-3713-4adc-802b-1bf7d7cfb3ae.png)|![inset](https://user-images.githubusercontent.com/34936885/127751631-1601402c-3328-44ef-a9b8-3212c222a68d.png)|![color_section](https://user-images.githubusercontent.com/34936885/127751633-9c9321ae-e3c0-4922-aab0-19821c9ba67d.png)|
