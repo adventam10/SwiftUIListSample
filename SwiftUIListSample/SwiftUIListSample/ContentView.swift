@@ -52,6 +52,7 @@ enum OperationsMenu: Int, CaseIterable, Identifiable {
     case unselectableParts
     case contextMenu
     case accordion
+    case singleSelection1
 
     var title: String {
         switch self {
@@ -67,6 +68,8 @@ enum OperationsMenu: Int, CaseIterable, Identifiable {
             return "Context Menu"
         case .accordion:
             return "Accordion"
+        case .singleSelection1:
+            return "Single Selection"
         }
     }
 
@@ -130,6 +133,8 @@ struct ContentView: View {
             return AnyView(NavigationLink(destination: ContextMenuView(title: menu.title)) { Text(menu.title) })
         case .accordion:
             return AnyView(NavigationLink(destination: AccordionView(title: menu.title)) { Text(menu.title) })
+        case .singleSelection1:
+            return AnyView(NavigationLink(destination: SingleSelection1View(title: menu.title)) { Text(menu.title) })
         }
     }
 }
