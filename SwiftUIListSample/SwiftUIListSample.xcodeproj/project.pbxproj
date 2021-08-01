@@ -17,6 +17,7 @@
 		0E49F49226B6143A0056594A /* ContextMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49F49126B6143A0056594A /* ContextMenuView.swift */; };
 		0E49F49426B648930056594A /* AccordionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49F49326B648930056594A /* AccordionView.swift */; };
 		0E49F49626B6D3510056594A /* SingleSelection1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49F49526B6D3510056594A /* SingleSelection1View.swift */; };
+		0E49F49826B6D4300056594A /* SingleSelection2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49F49726B6D4300056594A /* SingleSelection2View.swift */; };
 		0EFAE7CD26B4B88400B21155 /* SwiftUIListSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAE7CC26B4B88400B21155 /* SwiftUIListSampleApp.swift */; };
 		0EFAE7CF26B4B88400B21155 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAE7CE26B4B88400B21155 /* ContentView.swift */; };
 		0EFAE7D126B4B88700B21155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFAE7D026B4B88700B21155 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		0E49F49126B6143A0056594A /* ContextMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuView.swift; sourceTree = "<group>"; };
 		0E49F49326B648930056594A /* AccordionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccordionView.swift; sourceTree = "<group>"; };
 		0E49F49526B6D3510056594A /* SingleSelection1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelection1View.swift; sourceTree = "<group>"; };
+		0E49F49726B6D4300056594A /* SingleSelection2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelection2View.swift; sourceTree = "<group>"; };
 		0EFAE7C926B4B88400B21155 /* SwiftUIListSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIListSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFAE7CC26B4B88400B21155 /* SwiftUIListSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListSampleApp.swift; sourceTree = "<group>"; };
 		0EFAE7CE26B4B88400B21155 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				0E49F49126B6143A0056594A /* ContextMenuView.swift */,
 				0E49F49326B648930056594A /* AccordionView.swift */,
 				0E49F49526B6D3510056594A /* SingleSelection1View.swift */,
+				0E49F49726B6D4300056594A /* SingleSelection2View.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				0E49F48C26B607D10056594A /* MultiSelection2View.swift in Sources */,
 				0E49F48A26B605B00056594A /* MultiSelection1View.swift in Sources */,
 				0EFAE7DC26B4BF1700B21155 /* HeaderView.swift in Sources */,
+				0E49F49826B6D4300056594A /* SingleSelection2View.swift in Sources */,
 				0E49F49026B610640056594A /* UnselectablePartsView.swift in Sources */,
 				0E49F49226B6143A0056594A /* ContextMenuView.swift in Sources */,
 				0E49F48526B5DB0A0056594A /* ColorSectionsView.swift in Sources */,
