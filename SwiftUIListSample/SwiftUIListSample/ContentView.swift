@@ -44,6 +44,33 @@ enum AppearancesMenu: Int, CaseIterable, Identifiable {
     }
 }
 
+enum OperationsMenu: Int, CaseIterable, Identifiable {
+
+    case multiSelection1
+    case multiSelection2
+    case editCells
+    case unselectableParts
+    case contextMenu
+
+    var title: String {
+        switch self {
+        case .multiSelection1:
+            return "Multi Selection1"
+        case .multiSelection2:
+            return "Multi Selection2"
+        case .editCells:
+            return "Edit Cells"
+        case .unselectableParts:
+            return "Unselectable Parts"
+        case .contextMenu:
+            return "Context Menu"
+        }
+    }
+
+    var id: Int {
+        return rawValue
+    }
+}
 struct ContentView: View {
     
     var body: some View {
@@ -51,6 +78,12 @@ struct ContentView: View {
             List {
                 Section(header: Text("Appearances")) {
                     ForEach(AppearancesMenu.allCases) { menu in
+                        self.containedView(menu: menu).listItemTint(.red)
+                    }
+                }
+
+                Section(header: Text("Operations")) {
+                    ForEach(OperationsMenu.allCases) { menu in
                         self.containedView(menu: menu).listItemTint(.red)
                     }
                 }
@@ -77,6 +110,21 @@ struct ContentView: View {
             return AnyView(NavigationLink(destination: ColorSectionsView(title: menu.title)) { Text(menu.title) })
         case .insetsList:
             return AnyView(NavigationLink(destination: InsetsListView(title: menu.title)) { Text(menu.title) })
+        }
+    }
+
+    private func containedView(menu: OperationsMenu) -> AnyView {
+        switch menu {
+        case .multiSelection1:
+            return AnyView(NavigationLink(destination: MultiSelection1View(title: menu.title)) { Text(menu.title) })
+        case .multiSelection2:
+            return AnyView(NavigationLink(destination: MultiSelection2View(title: menu.title)) { Text(menu.title) })
+        case .editCells:
+            return AnyView(NavigationLink(destination: EditCellsView(title: menu.title)) { Text(menu.title) })
+        case .unselectableParts:
+            return AnyView(NavigationLink(destination: UnselectablePartsView(title: menu.title)) { Text(menu.title) })
+        case .contextMenu:
+            return AnyView(NavigationLink(destination: ContextMenuView(title: menu.title)) { Text(menu.title) })
         }
     }
 }
